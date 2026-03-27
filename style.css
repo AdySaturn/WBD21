@@ -1,0 +1,16 @@
+.odkaz {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    border: 5px solid rgb(0, 0, 0);
+  }
+  navigace{background: rgb(255, 255, 255);
+    padding: 12px 24px;
+    display: inline-block;
+    color: #196945;
+  background-color: #7ea091;
+  }
+  

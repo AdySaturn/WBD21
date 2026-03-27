@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galerie by Adam Štverka</title>
+</head>
+<style>
+body{
+    background-color: rgb(206, 64, 64);
+margin: 0%;}
+form{
+    background-color: rgb(138, 22, 22);
+    padding: 12px;
+    width: 650px;
+    margin: auto;
+    text-align: center;
+    border-radius: 12px;
+    
+    }
+    form p:hover{background: #43a019;color: black;
+    font-weight: 1000;
+    }
+    form p{transition: all 0.5s ease-in-out;}
+
+form p{
+    background-color: rgb(53, 77, 30);
+    color:tan;
+    padding: 12px;
+    margin: 12px 0px;
+    border-radius: 12px;
+    border-color: aqua;
+    box-shadow: 0 0 5px rgb(204, 187, 187);
+    text-align: left;
+    font-family: "Montserrat Alternates";
+    
+}
+label{
+    width: 120px;
+    display: inline-block;
+}
+input{
+    font-family: "Montserrat Alternates";
+background-color: rgb(183, 100, 231);
+}
+nav
+{padding-left: 13px;
+padding-right: 13px;
+text-align: left;
+color: #196945;
+background-color: #7ea091;
+position: sticky;
+top: 0%;}
+
+
+
+</style>
+<link rel="stylesheet" href="style.css">
+<body><nav> 
+    <a class="odkaz" class="navigace" href="index html.html">HOME</a>
+
+</nav>
+    
+    
+    
+    <form>
+        <p>
+            <label for="jmeno">Vaše jméno</label>
+            <input type="text" name="jmeno" id="jmeno" required>
+            
+        </p>
+        <p>
+            <label for="sleep">Dneska jsem se dobře vyspal</label>
+            <input type="checkbox" name="sleep" id="sleep" >
+        </p>
+        <p>
+            <label for="mood">Jaká je tvá nálada?</label>
+            Prachmizerná
+            <input type="radio" class="m1" name="mood" value="5">
+            <input type="radio" class="m2" name="mood" value="4">
+            <input type="radio" class="m3" name="mood" value="3">
+            <input type="radio" class="m4" name="mood" value="2">
+            <input type="radio" class="m5" name="mood" value="1">
+           Úžasně skvělá
+        </p>
+        <p>
+            <label for="spubor">Sem dej soubor:</label>
+            <input type="file" name="soubor" id="soubor" > 
+        </p>
+        <p>
+            <label for="barva">Zvol Barvu:</label>
+            <input type="color" name="barva" id="barva" > 
+        </p>
+        <p>
+            <label for="datum">Zvol Datum:</label>
+            <input type="date" name="datum" id="datum" > 
+        </p>
+        
+        <p>
+            <label for="cislo">Jak jsi starý?</label>
+            <input type="number" name="cislo" id="cislo" >
+        </p>
+        <p>
+            <label for="heslo">Jaké máš heslo?</label>
+            <input type="password" name="heslo" id="heslo" >
+        </p>
+        
+
+
+
+            <input type="submit" value="Potvrdit">
+            <input type="hidden" name="tajne" value="supersecret123" >
+            <input type="reset" name="mazat" id="mazat" >
+
+
+
+    </form>
+   
+</body>
+
+</html>

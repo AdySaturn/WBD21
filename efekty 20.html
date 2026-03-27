@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS transformace</title>
+  <style>
+    body{margin: 0;}
+    html {
+      color: rgb(104, 104, 179);
+      background: rgb(104, 104, 179);
+      text-align: center;
+    }
+  img { 
+    display: block; margin: 80px auto; 
+   }
+
+  input { 
+    display: none; }
+
+  label {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: rgb(255, 136, 0);
+    border: 5px solid rgb(112, 120, 231);}
+
+
+    label:hover {
+       background: red; color: black;}
+    
+       input:checked + label { background: rgb(106, 219, 106); color: black;}
+
+  input#zvetseni:checked ~ img { transform: scale(120%); }
+  input#otoceni:checked ~ img { transform: rotate(90deg); }
+  input#zmensit:checked ~ img { transform: scale(50%); }
+  input#krivit:checked ~ img { transform: skew(30deg, 20deg); }
+  input#prelozit:checked ~ img { transform: translate(120px, 50%); }
+  input#skaluj:checked ~ img { transform: scaleX(-1); }
+  input#blur:checked ~ img { filter: blur(5px); } 
+  input#svetlo:checked ~ img { filter: brightness(250%); }
+  input#seda:checked ~ img { filter: grayscale(100%); }
+  input#sepie:checked ~ img { filter: sepia(100%); }
+
+
+  img { transition: all 0.5s ease; }
+  label{transition: all 1s ease;}
+  nav
+{padding-left: 13px;
+padding-right: 13px;
+text-align: left;
+color: #196945;
+background-color: #7ea091;
+position: sticky;
+top: 0%;}
+
+
+  </style>
+</head>
+
+<body> <nav>
+  <a class="odkaz" href="index html.html">HOME</a>
+</nav>
+  
+
+
+
+
+  <input type="radio" name="transform" id="zvetseni">
+  <label for="zvetseni">Zvětšit</label>
+
+  <input type="radio" name="transform" id="otoceni">
+  <label for="otoceni">Otočit</label>
+
+  <input type="radio" name="transform" id="zmensit">
+  <label for="zmensit">Zmenšit</label>
+
+  <input type="radio" name="transform" id="krivit">
+  <label for="krivit">Křivit</label>
+
+  <input type="radio" name="transform" id="prelozit">
+  <label for="prelozit">Přemisti</label>
+
+  <input type="radio" name="transform" id="skaluj">
+  <label for="skaluj">Flip</label>
+
+  <input type="radio" name="transform" id="blur">
+  <label for="blur">Blur</label>
+
+  <input type="radio" name="transform" id="svetlo">
+  <label for="svetlo">Světlo</label>
+
+  <input type="radio" name="transform" id="seda">
+  <label for="seda">Šedá</label>
+
+  <input type="radio" name="transform" id="sepie">
+  <label for="sepie">Sepie</label>
+
+  <input type="radio" name="transform" id="zrusit">
+  <label for="zrusit">Zrušit</label>
+
+
+  <img src="https://placecats.com/300/200" alt="obrazek">
+  
+  
+
+
+
+</body>
+</html>
